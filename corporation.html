@@ -1,0 +1,1150 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<title>Corporation | Accts &amp; Techs</title>
+<meta name="description" content="Learn about Accts &amp; Techs — our story, mission, vision, team, offices, clients, career opportunities and more.">
+<link href="ico/logo.png" rel="shortcut icon">
+<link rel="stylesheet" href="css/animate.min.css">
+<link rel="stylesheet" href="css/font-awesome.min.css">
+<link rel="stylesheet" href="css/flipbox.min.css">
+<link rel="stylesheet" href="css/timeline.css">
+<link rel="stylesheet" href="css/odometer.min.css">
+<link rel="stylesheet" href="css/fancybox.min.css">
+<link rel="stylesheet" href="css/swiper.min.css">
+<link rel="stylesheet" href="css/bootstrap.min.css">
+<link rel="stylesheet" href="css/style.css">
+<!-- META TAGS -->
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<title>Accts & Techs | Accountancy, Payroll & IT Solutions – Maynooth, Ireland</title>
+<meta name="author" content="Accts & Techs">
+<meta name="description" content="Accts & Techs provides expert payroll services, bookkeeping, tax accounting, IT recruitment, contracting solutions, outsourcing and company formations in Ireland.">
+<meta name="keywords" content="accountancy ireland, payroll services ireland, bookkeeping maynooth, tax accounting kildare, IT recruitment ireland, company formations ireland, outsourcing ireland, contracting solutions, accts techs">
+<meta name="robots" content="index, follow">
+<meta name="theme-color" content="#0BBFE0">
+<link rel="canonical" href="https://www.accstechy.ie/index.html">
+
+<!-- SOCIAL MEDIA META -->
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Accts & Techs">
+<meta property="og:title" content="Accts & Techs | Accountancy, Payroll & IT Solutions">
+<meta property="og:description" content="Professional payroll, bookkeeping, tax accounting, IT recruitment and company formation services across Ireland. Trusted by businesses of all sizes.">
+<meta property="og:image" content="https://www.accstechs.ie/images/logo.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:url" content="https://www.accstechs.ie">
+<meta property="og:locale" content="en_IE">
+
+<!-- TWITTER META -->
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:site" content="@AccsTechs">
+<meta name="twitter:creator" content="@AccsTechs">
+<meta name="twitter:title" content="Accts & Techs | Accountancy, Payroll & IT Solutions">
+<meta name="twitter:description" content="Professional payroll, bookkeeping, tax accounting, IT recruitment and company formation services across Ireland.">
+<meta name="twitter:image" content="https://www.accstechs.ie/images/logo.png">
+
+<!-- FAVICON FILES -->
+<link href="ico/logo.png" rel="apple-touch-icon" sizes="144x144">
+<link href="ico/logo.png" rel="apple-touch-icon" sizes="114x114">
+<link href="ico/logo.png" rel="apple-touch-icon" sizes="72x72">
+<link href="ico/logo.png" rel="apple-touch-icon" sizes="57x57">
+<link href="ico/logo.png" rel="shortcut icon">
+
+<!-- CSS FILES -->
+<link rel="stylesheet" href="css/animate.min.css">
+<link rel="stylesheet" href="css/font-awesome.min.css">
+<link rel="stylesheet" href="css/flipbox.min.css">
+<link rel="stylesheet" href="css/timeline.css">
+<link rel="stylesheet" href="css/odometer.min.css">
+<link rel="stylesheet" href="css/fancybox.min.css">
+<link rel="stylesheet" href="css/swiper.min.css">
+<link rel="stylesheet" href="css/bootstrap.min.css">
+<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="css/corporation.css">
+</head>
+<style>
+
+  /* ABOUT VALUES SECTION */
+.about-values{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+  margin-top: 50px;
+}
+
+.value-card{
+  background: #fff;
+  border: 1px solid #e8eaf0;
+  border-radius: 6px;
+  padding: 32px 24px;
+  text-align: center;
+  transition: all 0.3s ease;
+  position: relative;
+  overflow: hidden;
+}
+
+.value-card::after{
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 3px;
+  background: #1555B8;
+  transform: scaleX(0);
+  transition: transform 0.3s ease;
+}
+
+.value-card:hover::after{
+  transform: scaleX(1);
+}
+
+.value-card:hover{
+  transform: translateY(-6px);
+  box-shadow: 0 12px 35px rgba(21,85,184,0.12);
+  border-color: #c7d7ff;
+}
+
+.value-card .v-icon{
+  width: 72px;
+  height: 72px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, #eef3ff, #dbe6ff);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 22px;
+  transition: all 0.3s ease;
+}
+
+.value-card:hover .v-icon{
+  background: linear-gradient(135deg, #1555B8, #2575e8);
+}
+
+.value-card .v-icon i{
+  font-size: 28px;
+  color: #1555B8;
+  transition: color 0.3s ease;
+}
+
+.value-card:hover .v-icon i{
+  color: #fff;
+}
+
+.value-card h4{
+  font-size: 18px;
+  font-weight: 600;
+  color: #172038;
+  margin-bottom: 12px;
+  font-family: "Poppins", sans-serif;
+}
+
+.value-card p{
+  font-size: 14px;
+  line-height: 1.8;
+  color: #666;
+  margin: 0;
+}
+
+/* RESPONSIVE */
+@media(max-width: 992px){
+  .about-values{
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media(max-width: 576px){
+  .about-values{
+    grid-template-columns: 1fr;
+  }
+}
+
+
+
+.page-header-banner {
+  background: linear-gradient(135deg, #172038 0%, #1555B8 100%);
+  padding: 60px 0;
+  text-align: center;
+  color: #fff;
+}
+.page-header-banner h1 {
+  font-size: 42px;
+  font-weight: 400;
+  font-family: "Playfair Display", serif;
+  margin-bottom: 10px;
+}
+.page-header-banner p { font-size: 16px; opacity: 0.85; max-width: 540px; margin: 0 auto; }
+.breadcrumb-bar {
+  background: #f5f7fb; padding: 12px 0;
+  border-bottom: 1px solid #e8eaf0;
+}
+.breadcrumb-bar .breadcrumb { margin: 0; background: transparent; font-size: 13px; }
+.breadcrumb-item a { color: #1555B8; }
+
+
+
+/* About strip below cards */
+.about-intro-strip {
+  background: #fff;
+  border-top: 1px solid #e8eaf0;
+  padding: 60px 0;
+}
+.about-intro-strip .row { align-items: center; }
+.about-intro-strip h2 {
+  font-size: 34px;
+  font-family: "Playfair Display", serif;
+  color: #172038;
+  margin-bottom: 16px;
+}
+.about-intro-strip p { color: #555; font-size: 15px; line-height: 1.9; margin-bottom: 14px; }
+.about-intro-strip .stat-row {
+  display: flex; gap: 40px; margin-top: 30px;
+}
+.about-intro-strip .stat-item .num {
+  font-size: 36px; font-weight: 800;
+  color: #1555B8;
+  font-family: "Playfair Display", serif;
+}
+.about-intro-strip .stat-item small { font-size: 13px; color: #888; display: block; }
+.about-intro-strip .side-img {
+  background: linear-gradient(135deg, #172038, #1555B8);
+  border-radius: 4px;
+  height: 340px;
+  display: flex; align-items: center; justify-content: center;
+  color: #fff;
+  font-size: 60px;
+}
+.btn-primary-brand {
+  display: inline-block;
+  background: #1555B8; color: #fff;
+  padding: 13px 32px; font-size: 13px;
+  font-weight: 700; letter-spacing: 1px;
+  text-transform: uppercase;
+  text-decoration: none;
+  margin-top: 24px;
+  transition: background 0.2s;
+}
+.btn-primary-brand:hover { background: #0e3d8a; color: #fff; text-decoration: none; }
+
+@media(max-width:992px){ .corp-cards-grid{ grid-template-columns: repeat(2,1fr); } }
+@media(max-width:576px){ .corp-cards-grid{ grid-template-columns: 1fr; } }
+[id] { scroll-margin-top: 100px; }
+
+/* MISSION VISION SECTION */
+.mv-section{
+  padding: 70px 0 80px;
+  background: #f9fafc;
+}
+
+.mv-cards{
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+  gap: 28px;
+  margin-top: 50px;
+}
+
+.mv-card{
+  background: #fff;
+  border: 1px solid #e8eaf0;
+  border-radius: 4px;
+  padding: 44px 32px;
+  text-align: center;
+  transition: all 0.3s ease;
+  position: relative;
+  overflow: hidden;
+}
+
+.mv-card::after{
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 4px;
+  background: #1555B8;
+  transform: scaleX(0);
+  transition: transform 0.3s ease;
+}
+
+.mv-card:hover::after{
+  transform: scaleX(1);
+}
+
+.mv-card:hover{
+  box-shadow: 0 12px 44px rgba(21,85,184,0.14);
+  transform: translateY(-6px);
+}
+
+.mv-card .mv-icon{
+  width: 76px;
+  height: 76px;
+  background: linear-gradient(135deg, #eef3ff, #d8e4ff);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 22px;
+  font-size: 30px;
+  color: #1555B8;
+  transition: all 0.3s;
+}
+
+.mv-card:hover .mv-icon{
+  background: linear-gradient(135deg, #1555B8, #2575e8);
+  color: #fff;
+}
+
+.mv-card h3{
+  font-size: 22px;
+  font-weight: 600;
+  color: #172038;
+  margin-bottom: 14px;
+  font-family: "Playfair Display", serif;
+}
+
+.mv-card p{
+  font-size: 14px;
+  color: #666;
+  line-height: 1.8;
+  margin: 0;
+}
+
+/* VALUES STRIP */
+.values-strip{
+  background: #172038;
+  padding: 60px 0;
+}
+
+.values-strip h2{
+  color: #fff;
+  font-family: "Playfair Display", serif;
+  font-size: 34px;
+  margin-bottom: 10px;
+}
+
+.values-strip p{
+  color: rgba(255,255,255,0.7);
+  font-size: 15px;
+  margin-bottom: 0;
+}
+
+.value-pill{
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  background: rgba(255,255,255,0.08);
+  border: 1px solid rgba(255,255,255,0.15);
+  border-radius: 30px;
+  padding: 10px 22px;
+  color: #fff;
+  font-size: 14px;
+  margin: 8px 6px;
+}
+
+.value-pill i{
+  color: #0bbfe0;
+}
+
+/* RESPONSIVE */
+@media(max-width:768px){
+  .mv-cards{
+    grid-template-columns: 1fr;
+  }
+}
+
+[id]{
+  scroll-margin-top: 100px;
+}
+
+/* CLIENTS SECTION */
+.clients-section{
+  padding: 70px 0 80px;
+  background: #f9fafc;
+}
+
+.clients-section .section-intro{
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.clients-section .section-intro span{
+  font-size: 11px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: #1555B8;
+  font-weight: 700;
+}
+
+.clients-section .section-intro h2{
+  font-size: 36px;
+  font-family: "Playfair Display", serif;
+  color: #172038;
+  margin: 10px 0 12px;
+}
+
+.clients-section .section-intro p{
+  color: #666;
+  font-size: 15px;
+}
+
+/* CLIENT GRID */
+.clients-grid{
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 24px;
+}
+
+.client-card{
+  background: #fff;
+  border: 1px solid #e8eaf0;
+  border-radius: 4px;
+  padding: 36px 24px;
+  text-align: center;
+  transition: all 0.3s ease;
+  position: relative;
+  overflow: hidden;
+}
+
+.client-card::after{
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 3px;
+  background: #1555B8;
+  transform: scaleX(0);
+  transition: transform 0.3s ease;
+}
+
+.client-card:hover::after{
+  transform: scaleX(1);
+}
+
+.client-card:hover{
+  box-shadow: 0 10px 40px rgba(21,85,184,0.13);
+  transform: translateY(-5px);
+}
+
+.client-card img{
+  max-height: 60px;
+  max-width: 120px;
+  object-fit: contain;
+  filter: grayscale(100%);
+  opacity: 0.6;
+  transition: all 0.3s;
+}
+
+.client-card:hover img{
+  filter: grayscale(0%);
+  opacity: 1;
+}
+
+.client-card figcaption{
+  font-size: 13px;
+  color: #888;
+  margin-top: 14px;
+  font-weight: 600;
+}
+
+/* TESTIMONIAL STRIP */
+.testimonial-strip{
+  background: linear-gradient(135deg,#172038,#1555B8);
+  padding: 70px 0;
+}
+
+.testimonial-strip h2{
+  font-family: "Playfair Display", serif;
+  color: #fff;
+  font-size: 34px;
+  margin-bottom: 40px;
+}
+
+.testimonial-strip blockquote{
+  color: rgba(255,255,255,0.85);
+  font-size: 17px;
+  font-style: italic;
+  line-height: 1.8;
+  border: none;
+  padding: 0;
+  margin: 0 0 20px;
+}
+
+.testimonial-strip cite{
+  font-size: 13px;
+  color: rgba(255,255,255,0.55);
+  font-style: normal;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+/* RESPONSIVE */
+@media(max-width:992px){
+  .clients-grid{
+    grid-template-columns: repeat(2,1fr);
+  }
+}
+
+@media(max-width:576px){
+  .clients-grid{
+    grid-template-columns: 1fr;
+  }
+}
+
+[id]{
+  scroll-margin-top: 100px;
+}
+
+/* FAQ SECTION */
+.faq-section{
+  padding: 70px 0 80px;
+  background: #f9fafc;
+}
+
+.faq-section .section-intro{
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.faq-section .section-intro span{
+  font-size: 11px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: #1555B8;
+  font-weight: 700;
+}
+
+.faq-section .section-intro h2{
+  font-size: 36px;
+  font-family: "Playfair Display", serif;
+  color: #172038;
+  margin: 10px 0 12px;
+}
+
+.faq-section .section-intro p{
+  color: #666;
+  font-size: 15px;
+}
+
+/* FAQ ACCORDION */
+.faq-accordion .card{
+  background: #fff;
+  border: 1px solid #e8eaf0 !important;
+  border-radius: 4px !important;
+  margin-bottom: 10px;
+  overflow: hidden;
+}
+
+.faq-accordion .card-header{
+  background: #fff;
+  border: none;
+  padding: 0;
+}
+
+.faq-accordion .card-header a{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px 24px;
+  font-size: 15px;
+  font-weight: 600;
+  color: #172038;
+  text-decoration: none;
+  transition: all 0.2s;
+}
+
+.faq-accordion .card-header a::after{
+  content: "\f107";
+  font-family: FontAwesome;
+  font-size: 16px;
+  color: #1555B8;
+  flex-shrink: 0;
+  margin-left: 12px;
+  transition: transform 0.3s;
+}
+
+.faq-accordion .card-header a.collapsed::after{
+  transform: rotate(-90deg);
+}
+
+.faq-accordion .card-header a:not(.collapsed){
+  color: #1555B8;
+}
+
+.faq-accordion .card-header a:hover{
+  color: #1555B8;
+}
+
+.faq-accordion .card-body{
+  padding: 0 24px 20px;
+  font-size: 14px;
+  color: #666;
+  line-height: 1.8;
+  border-top: 1px solid #f0f2f8;
+}
+
+/* FAQ SIDEBAR */
+.faq-sidebox{
+  background: linear-gradient(135deg, #1555B8, #0bbfe0);
+  border-radius: 4px;
+  padding: 40px 30px;
+  color: #fff;
+  text-align: center;
+  position: sticky;
+  top: 100px;
+}
+
+.faq-sidebox i{
+  font-size: 44px;
+  opacity: 0.85;
+  margin-bottom: 18px;
+  display: block;
+}
+
+.faq-sidebox h3{
+  font-size: 22px;
+  font-weight: 700;
+  margin-bottom: 12px;
+}
+
+.faq-sidebox p{
+  font-size: 14px;
+  opacity: 0.85;
+  line-height: 1.7;
+  margin-bottom: 24px;
+}
+
+.faq-sidebox a.btn-white{
+display: inline-block;
+background: #fff;
+color: #1555B8;
+padding: 12px 28px;
+font-size: 13px;
+font-weight: 700;
+letter-spacing: 0.5px;
+text-decoration: none;
+border-radius: 2px;
+transition: all 0.2s;
+}
+
+.faq-sidebox a.btn-white:hover{
+background: #f0f2ff;
+}
+
+[id]{
+scroll-margin-top: 100px;
+}
+</style>
+<body>
+<!-- header -->
+<div class="search-box">
+  <div class="close-btn"> <span></span> <span></span> </div>
+  <!-- end close-btn -->
+  <form>
+    <input type="search" placeholder="Type here to search...">
+    <h6>Type above and press enter or press close to cancel.</h6>
+  </form>
+</div>
+<!-- end search-box -->
+<aside class="sandwich-menu">
+  <div class="logo"> <img src="images/logo.png" alt="Image"> </div>
+  <!-- end logo -->
+  <ul class="nav-menu">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="corporation.html">Corporation</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+      <!-- end nav-menu -->
+  <p>Uon is a creative multi-concept Themeforest layout will help business owners create awesome websites.</p>
+  <ul class="photo-gallery">
+    <li><a href="images/image04.jpg" data-fancybox><img src="images/image04.jpg" alt="Image"></a></li>
+    <li><a href="images/image05.jpg" data-fancybox><img src="images/image05.jpg" alt="Image"></a></li>
+    <li><a href="images/image06.jpg" data-fancybox><img src="images/image06.jpg" alt="Image"></a></li>
+    <li><a href="images/image07.jpg" data-fancybox><img src="images/image07.jpg" alt="Image"></a></li>
+  </ul>
+  <address>
+  <p>Boryssa Himry 124 B Block Pozniaky <br>
+    IvanaFrankovsk - Ukraine</p>
+  <p>+38 (98) 294 80 86<br>
+    E-mail <a href="#">info@uon-corp.com</a></p>
+  </address>
+  <ul class="social-media">
+    <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+    <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+    <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+    <li><a href="#"><i class="fa fa-google-plus"></i></a></li>
+    <li><a href="#"><i class="fa fa-youtube-play"></i></a></li>
+  </ul>
+  <!-- end social-media --> 
+  <span class="copyright">© 2022 Uon Corp - Business & Financial Solutionss</span> </aside>
+<!-- end sandwich-menu -->
+<header class="header">
+  <div class="topbar">
+    <div class="container">
+      <div class="tagline"> Although : no-one wants to be knocked back or told their <u>idea is unworkable</u></div>
+      <!-- end tagline -->
+      <ul class="social-media">
+        <li><a href="#" data-toggle="tooltip" data-placement="bottom" title="Facebook"><i class="fa fa-facebook"></i></a></li>
+        <li><a href="#" data-toggle="tooltip" data-placement="bottom" title="Twitter"><i class="fa fa-twitter"></i></a></li>
+        <li><a href="#" data-toggle="tooltip" data-placement="bottom" title="Linkedin"><i class="fa fa-linkedin"></i></a></li>
+        <li><a href="#" data-toggle="tooltip" data-placement="bottom" title="Google+"><i class="fa fa-google-plus"></i></a></li>
+        <li><a href="#" data-toggle="tooltip" data-placement="bottom" title="Youtube"><i class="fa fa-youtube-play"></i></a></li>
+      </ul>
+      <!-- end social-media -->
+      <div class="phone"><img src="images/icon-phone.png" alt="Image"> <span><b>UA</b> +38 062 431 8086</span></div>
+      <!-- end phone --> 
+    </div>
+    <!-- end container --> 
+  </div>
+  <!-- end topbar -->
+  <nav class="navbar">
+    <div class="container">
+      <div class="logo"> <a href="#"> <img src="images/logo.png" alt="Image"> </a> </div>
+      <!-- end logo -->
+      <ul class="nav-menu">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="corporation.html">Corporation</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+      <!-- end nav-menu -->
+      <div class="search-btn"> <i class="fa fa-search"></i> </div>
+      <div class="sandwich-btn" aria-label="Open mobile menu" role="button" tabindex="0">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+      <!-- end search-btn -->
+    </div>
+    <!-- end container --> 
+  </nav>
+  <!-- end navbar --> 
+</header>
+<!-- end header -->
+<!-- PAGE HEADER BANNER -->
+<div class="page-header-banner">
+  <div class="container">
+    <h1>Corporation</h1>
+    <p>Learn who we are, what drives us, our team, offices, clients and opportunities to join us.</p>
+  </div>
+</div>
+
+<!-- BREADCRUMB -->
+<div class="breadcrumb-bar">
+  <div class="container">
+    <ol class="breadcrumb">
+      <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+      <li class="breadcrumb-item active">Corporation</li>
+    </ol>
+  </div>
+</div>
+
+<!-- ABOUT INTRO STRIP -->
+<section class="about-intro-strip wow fadeIn">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-6">
+        <span>About Accts &amp; Techs</span>
+        <h2>An Irish-Leading Business Services Company</h2>
+        <p>Accts &amp; Techs is an Irish-leading company that proudly offers end-to-end solutions — professional and affordable services for small businesses across Ireland.</p>
+        <p>We are passionate about helping you get the best out of what you do. We are always available to chat, putting you first — and we do this with respect and integrity. Whether you are a sole trader or a limited company, we tailor our services to meet your specific requirements.</p>
+        <p>Based at <strong>Maynooth Business Campus, Co. Kildare</strong> — ideally located to service clients in Dublin and all surrounding counties.</p>
+        <div class="stat-row">
+          <div class="stat-item">
+            <div class="num">10+</div>
+            <small>Years Experience</small>
+          </div>
+          <div class="stat-item">
+            <div class="num">98%</div>
+            <small>Client Satisfaction</small>
+          </div>
+          <div class="stat-item">
+            <div class="num">500+</div>
+            <small>Businesses Served</small>
+          </div>
+        </div>
+        <a href="contact.html" class="btn-primary-brand">Get In Touch</a>
+      </div>
+      <div class="col-lg-6 d-none d-lg-flex">
+        <div class="side-img" style="width:100%;">
+          <div style="text-align:center;">
+            <i class="fa fa-building" style="display:block; margin-bottom:16px; opacity:0.5;"></i>
+            <div style="font-size:22px; font-family:'Playfair Display',serif; font-weight:400; opacity:0.9;">Accts &amp; Techs Ltd</div>
+            <div style="font-size:13px; opacity:0.6; margin-top:8px;">Maynooth, Co. Kildare</div>
+          </div>
+        </div>
+      </div>
+       <div class="about-values">
+      <div class="value-card wow fadeInUp" data-wow-delay="0.0s">
+        <div class="v-icon"><i class="fa fa-handshake-o"></i></div>
+        <h4>Friendly &amp; Professional</h4>
+        <p>We provide an accessible, friendly and professional service tailored to your needs — sole trader or limited company.</p>
+      </div>
+      <div class="value-card wow fadeInUp" data-wow-delay="0.1s">
+        <div class="v-icon"><i class="fa fa-credit-card"></i></div>
+        <h4>Flexible Payment Plans</h4>
+        <p>We work around your budget. Contact us to discuss flexible payment plans and schedule your first free consultation.</p>
+      </div>
+      <div class="value-card wow fadeInUp" data-wow-delay="0.2s">
+        <div class="v-icon"><i class="fa fa-tag"></i></div>
+        <h4>Discounts &amp; Value</h4>
+        <p>We provide discounts on popular and seasonal services so you can get the help you need without delay.</p>
+      </div>
+    </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- MISSION VISION CARDS -->
+<section class="mv-section">
+  <div class="container">
+    <div style="text-align:center; margin-bottom:10px;">
+      <span style="font-size:11px;letter-spacing:2px;text-transform:uppercase;color:#1555B8;font-weight:700;">What Drives Us</span>
+      <h2 style="font-size:36px;font-family:'Playfair Display',serif;color:#172038;margin:10px 0 0;">Our Purpose &amp; Direction</h2>
+    </div>
+
+    <div class="mv-cards">
+      <div class="mv-card wow fadeInUp" data-wow-delay="0.0s">
+        <div class="mv-icon"><i class="fa fa-rocket"></i></div>
+        <h3>Mission</h3>
+        <p>To deliver professional, affordable and reliable business services that empower small businesses across Ireland to thrive — with respect, transparency and integrity at every step.</p>
+      </div>
+      <div class="mv-card wow fadeInUp" data-wow-delay="0.15s">
+        <div class="mv-icon"><i class="fa fa-eye"></i></div>
+        <h3>Vision</h3>
+        <p>To be Ireland's most trusted partner for small business services — a company known for its people-first approach, consistent quality, and genuine care for the clients we serve.</p>
+      </div>
+      <div class="mv-card wow fadeInUp" data-wow-delay="0.3s">
+        <div class="mv-icon"><i class="fa fa-heart"></i></div>
+        <h3>Philosophy</h3>
+        <p>We believe that when small businesses succeed, communities grow stronger. Our role is to remove the burden of administration so you can focus on what you love doing most.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- VALUES STRIP -->
+<section class="values-strip wow fadeIn">
+  <div class="container">
+    <div class="row align-items-center">
+      <div class="col-lg-4">
+        <h2>Our Core Values</h2>
+        <p>These principles guide every interaction, every decision and every service we deliver to our clients.</p>
+      </div>
+      <div class="col-lg-8" style="margin-top:16px;">
+        <span class="value-pill"><i class="fa fa-check-circle"></i> Integrity</span>
+        <span class="value-pill"><i class="fa fa-check-circle"></i> Transparency</span>
+        <span class="value-pill"><i class="fa fa-check-circle"></i> Reliability</span>
+        <span class="value-pill"><i class="fa fa-check-circle"></i> Respect</span>
+        <span class="value-pill"><i class="fa fa-check-circle"></i> Accessibility</span>
+        <span class="value-pill"><i class="fa fa-check-circle"></i> Excellence</span>
+        <span class="value-pill"><i class="fa fa-check-circle"></i> Innovation</span>
+        <span class="value-pill"><i class="fa fa-check-circle"></i> Client Focus</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CLIENTS GRID -->
+<section class="clients-section">
+  <div class="container">
+    <div class="section-intro wow fadeIn">
+      <span>Trusted By Businesses Across Ireland</span>
+      <h2>Who We Work With</h2>
+      <p>Our client base spans a wide range of industries — all united by a need for reliable, professional business services.</p>
+    </div>
+    <div class="clients-grid">
+      <div class="client-card wow fadeInUp" data-wow-delay="0.0s">
+        <figure>
+          <img src="images/logo01.png" alt="Client Logo">
+          <figcaption>Inc Corp</figcaption>
+        </figure>
+      </div>
+      <div class="client-card wow fadeInUp" data-wow-delay="0.05s">
+        <figure>
+          <img src="images/logo02.png" alt="Client Logo">
+          <figcaption>Business</figcaption>
+        </figure>
+      </div>
+      <div class="client-card wow fadeInUp" data-wow-delay="0.1s">
+        <figure>
+          <img src="images/logo03.png" alt="Client Logo">
+          <figcaption>TNWY</figcaption>
+        </figure>
+      </div>
+      <div class="client-card wow fadeInUp" data-wow-delay="0.15s">
+        <figure>
+          <img src="images/logo04.png" alt="Client Logo">
+          <figcaption>Forbes</figcaption>
+        </figure>
+      </div>
+      <div class="client-card wow fadeInUp" data-wow-delay="0.2s">
+        <figure>
+          <img src="images/logo05.png" alt="Client Logo">
+          <figcaption>Dribbble</figcaption>
+        </figure>
+      </div>
+      <div class="client-card wow fadeInUp" data-wow-delay="0.25s">
+        <figure>
+          <img src="images/logo06.png" alt="Client Logo">
+          <figcaption>In Vision</figcaption>
+        </figure>
+      </div>
+      <div class="client-card wow fadeInUp" data-wow-delay="0.3s">
+        <figure>
+          <img src="images/logo07.png" alt="Client Logo">
+          <figcaption>Air BnB</figcaption>
+        </figure>
+      </div>
+      <div class="client-card wow fadeInUp" data-wow-delay="0.35s">
+        <figure>
+          <img src="images/logo08.png" alt="Client Logo">
+          <figcaption>Google</figcaption>
+        </figure>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- TESTIMONIAL STRIP -->
+<section class="testimonial-strip wow fadeIn">
+  <div class="container">
+    <h2>What Our Clients Say</h2>
+    <div class="row">
+      <div class="col-md-4">
+        <blockquote>"Accts &amp; Techs have been managing our payroll and bookkeeping for over three years. Their service is professional, reliable and always on time."</blockquote>
+        <cite>Business Owner, Co. Kildare</cite>
+      </div>
+      <div class="col-md-4">
+        <blockquote>"The team helped us form our company in Ireland quickly and without hassle. They guided us through every step with clarity and professionalism."</blockquote>
+        <cite>Director, Dublin Tech Start-up</cite>
+      </div>
+      <div class="col-md-4">
+        <blockquote>"We outsourced our bookkeeping and HR administration to Accts &amp; Techs — we save time, reduce costs, and operations run much more smoothly now."</blockquote>
+        <cite>Operations Manager, Leinster Region</cite>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FAQ CONTENT -->
+<section class="faq-section">
+  <div class="container">
+    <div class="section-intro wow fadeIn">
+      <span>Got Questions?</span>
+      <h2>We Have Answers</h2>
+      <p>Can't find what you're looking for? <a href="contact.html" style="color:#1555B8;">Contact us directly</a> and we'll be happy to help.</p>
+    </div>
+    <div class="row">
+      <div class="col-md-8 wow fadeIn">
+        <div class="faq-accordion accordion" id="faqAccordion" role="tablist">
+
+          <div class="card">
+            <div class="card-header" role="tab" id="h1">
+              <a data-toggle="collapse" href="#c1" aria-expanded="true" aria-controls="c1">What services does Accts &amp; Techs offer?</a>
+            </div>
+            <div id="c1" class="collapse show" role="tabpanel" aria-labelledby="h1" data-parent="#faqAccordion">
+              <div class="card-body">We offer a full range of professional business services including Bookkeeping, Payroll Processing, Tax &amp; Accounting, Company Formations, IT Recruitment, Contracting Solutions and Outsourcing. All services are tailored to the needs of small businesses across Ireland.</div>
+            </div>
+          </div>
+
+          <div class="card">
+            <div class="card-header" role="tab" id="h2">
+              <a class="collapsed" data-toggle="collapse" href="#c2" aria-expanded="false" aria-controls="c2">Do you offer a free consultation?</a>
+            </div>
+            <div id="c2" class="collapse" role="tabpanel" aria-labelledby="h2" data-parent="#faqAccordion">
+              <div class="card-body">Yes — your first consultation is completely free of charge. We encourage all new and prospective clients to schedule a call or meeting so we can understand your business needs and recommend the most suitable services and payment plan.</div>
+            </div>
+          </div>
+
+          <div class="card">
+            <div class="card-header" role="tab" id="h3">
+              <a class="collapsed" data-toggle="collapse" href="#c3" aria-expanded="false" aria-controls="c3">Can you handle payroll for my employees?</a>
+            </div>
+            <div id="c3" class="collapse" role="tabpanel" aria-labelledby="h3" data-parent="#faqAccordion">
+              <div class="card-body">Absolutely. We provide accurate, compliant payroll processing on a monthly, quarterly or annual basis. We ensure your team is always paid correctly and on time, and we handle all Revenue Commissioners submissions on your behalf.</div>
+            </div>
+          </div>
+
+          <div class="card">
+            <div class="card-header" role="tab" id="h4">
+              <a class="collapsed" data-toggle="collapse" href="#c4" aria-expanded="false" aria-controls="c4">Do I need to be based in Kildare to use your services?</a>
+            </div>
+            <div id="c4" class="collapse" role="tabpanel" aria-labelledby="h4" data-parent="#faqAccordion">
+              <div class="card-body">No — we service clients across Dublin and all surrounding counties. Our services are available both in-house and remotely, so location is never a barrier. Many of our clients avail of our fully remote bookkeeping and payroll service.</div>
+            </div>
+          </div>
+
+          <div class="card">
+            <div class="card-header" role="tab" id="h5">
+              <a class="collapsed" data-toggle="collapse" href="#c5" aria-expanded="false" aria-controls="c5">What are your payment options?</a>
+            </div>
+            <div id="c5" class="collapse" role="tabpanel" aria-labelledby="h5" data-parent="#faqAccordion">
+              <div class="card-body">We offer flexible payment plans to suit every budget. We discuss options during your free first consultation, and we can structure monthly or per-service payment arrangements depending on your preferences and requirements.</div>
+            </div>
+          </div>
+
+          <div class="card">
+            <div class="card-header" role="tab" id="h6">
+              <a class="collapsed" data-toggle="collapse" href="#c6" aria-expanded="false" aria-controls="c6">Can you help me set up a new company in Ireland?</a>
+            </div>
+            <div id="c6" class="collapse" role="tabpanel" aria-labelledby="h6" data-parent="#faqAccordion">
+              <div class="card-body">Yes. Our Company Formations service handles the entire registration process on your behalf — from filing with the Companies Registration Office to setting up your business for VAT and tax obligations. We make starting your business as straightforward as possible.</div>
+            </div>
+          </div>
+
+          <div class="card">
+            <div class="card-header" role="tab" id="h7">
+              <a class="collapsed" data-toggle="collapse" href="#c7" aria-expanded="false" aria-controls="c7">Are your bookkeepers fully qualified?</a>
+            </div>
+            <div id="c7" class="collapse" role="tabpanel" aria-labelledby="h7" data-parent="#faqAccordion">
+              <div class="card-body">Yes — all our bookkeepers are fully qualified professionals. We also provide backup cover in the event of staff absences, ensuring that your business continuity is never disrupted. Our team is experienced across multiple accounting software platforms.</div>
+            </div>
+          </div>
+
+          <div class="card">
+            <div class="card-header" role="tab" id="h8">
+              <a class="collapsed" data-toggle="collapse" href="#c8" aria-expanded="false" aria-controls="c8">How do I get started with Accts &amp; Techs?</a>
+            </div>
+            <div id="c8" class="collapse" role="tabpanel" aria-labelledby="h8" data-parent="#faqAccordion">
+              <div class="card-body">Simply get in touch with us by phone at 045 254 212 or email <a href="mailto:info@acctechs.ie">info@acctechs.ie</a> — or complete the free consultation form on our website. One of our team will contact you promptly to arrange an initial consultation at no charge.</div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+      <div class="col-md-4 wow fadeIn" data-wow-delay="0.2s">
+        <div class="faq-sidebox">
+          <i class="fa fa-phone"></i>
+          <h3>Still Have Questions?</h3>
+          <p>Our team is always happy to help. Call us, email us or book your free consultation today.</p>
+          <a href="contact.html" class="btn-white">Contact Us</a>
+          <div style="margin-top:24px; font-size:14px; opacity:0.85;">
+            <strong>045 254 212</strong><br>
+            <a href="mailto:info@acctechs.ie" style="color:rgba(255,255,255,0.75); font-size:13px;">info@acctechs.ie</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="footer">
+  <div class="contact-wrapper">
+    <div class="container">
+      <div class="content-box wow fadeIn">
+        <img src="images/footer-icon01.png" alt="Address">
+        <h3>Our Location</h3>
+        <p>Unit F13, Maynooth Business Campus, Maynooth, Co. Kildare W23 Y5N7</p>
+      </div>
+      <div class="content-box wow fadeIn">
+        <img src="images/footer-icon02.png" alt="Hours">
+        <h3>Working Hours</h3>
+        <p>Monday to Friday: 09:00 &ndash; 18:30<br>Saturday: 09:00 &ndash; 13:00</p>
+      </div>
+      <div class="content-box wow fadeIn">
+        <img src="images/footer-icon03.png" alt="Support">
+        <h3>Support Centre</h3>
+        <p>Accts &amp; Techs is always available &mdash; <a href="tel:+35345254212">call</a> or <a href="mailto:info@acctechs.ie">email</a> us anytime.</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="content-wrapper">
+    <div class="container">
+      <div class="row">
+
+        <!-- Logo + Description -->
+        <div class="col-lg-3 wow fadeIn">
+          <img src="images/logo.png" alt="Accts &amp; Techs" class="logo">
+          <p>Accts &amp; Techs Ltd is an Irish-leading company proudly offering end-to-end professional and affordable services for small businesses across Ireland &mdash; with respect and integrity.</p>
+        </div>
+
+        <!-- Corporation — each link goes to corporation.html#anchor -->
+        <div class="col-lg-2 col-md-6 wow fadeIn">
+          <ul class="footer-menu">
+            <li style="font-size:11px;letter-spacing:1px;text-transform:uppercase;color:#aaa;font-weight:700;margin-bottom:10px;pointer-events:none;">Quick Links</li>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="corporation.html#about">Corporation</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+
+        <!-- Services — ALL 9, each goes to services.html#anchor -->
+        <div class="col-lg-3 col-md-6 wow fadeIn">
+          <ul class="footer-menu">
+            <li style="font-size:11px;letter-spacing:1px;text-transform:uppercase;color:#aaa;font-weight:700;margin-bottom:10px;pointer-events:none;">Services</li>
+            <li><a href="services.html#accounting">Accounting &amp; Bookkeeping</a></li>
+            <li><a href="services.html#business-dev">Business Development</a></li>
+            <li><a href="services.html#company-formations">Company Formations</a></li>
+            <li><a href="services.html#consultation">Consultation</a></li>
+            <li><a href="services.html#it-recruitment">IT Recruitment</a></li>
+            <li><a href="services.html#outsourcing">Outsourcing</a></li>
+            <li><a href="services.html#payroll">Payroll Management</a></li>
+            <li><a href="services.html#startups">Startups</a></li>
+            <li><a href="services.html#taxation">Taxation Services</a></li>
+          </ul>
+        </div>
+
+        <!-- Contact Box -->
+        <div class="col-lg-4 wow fadeIn">
+          <div class="contact-box">
+            <h5>CALL US</h5>
+            <h3>045 254 212</h3>
+            <p>Email: <a href="mailto:info@acctechs.ie">info@acctechs.ie</a></p>
+            <ul>
+              <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+              <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+              <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+            </ul>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+  <div class="sub-footer wow fadeIn">
+    <div class="container">
+      <span class="copyright">&copy; 2024 Accts &amp; Techs Ltd &mdash; All Rights Reserved</span>
+      <span class="creation">Maynooth, Co. Kildare, Ireland</span>
+    </div>
+  </div>
+</footer>
+<!-- end footer -->
+<a href="#" class="scrollup"><i class="fa fa-long-arrow-up" aria-hidden="true"></i></a> 
+
+<!-- JS FILES --> 
+<script src="js/jquery.min.js"></script> 
+<script src="js/popper.min.js"></script> 
+<script src="js/bootstrap.min.js"></script> 
+<script src="js/fancybox.min.js"></script> 
+<script src="js/odometer.min.js"></script> 
+<script src="js/timeline.js"></script> 
+<script src="js/swiper.min.js"></script> 
+<script src="js/isotope.min.js"></script> 
+<script src="js/wow.min.js"></script> 
+<script src="js/imagesloaded.pkgd.min.js"></script> 
+<script src="js/scripts.js"></script>
+</body>
+</html>
+<script src="js/jquery.min.js"></script>
+<script src="js/popper.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/fancybox.min.js"></script>
+<script src="js/odometer.min.js"></script>
+<script src="js/timeline.js"></script>
+<script src="js/swiper.min.js"></script>
+<script src="js/isotope.min.js"></script>
+<script src="js/wow.min.js"></script>
+<script src="js/imagesloaded.pkgd.min.js"></script>
+<script src="js/scripts.js"></script>
+</body>
+</html>

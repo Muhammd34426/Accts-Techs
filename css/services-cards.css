@@ -1,0 +1,281 @@
+/* =========================================================
+   Accts & Techs — Homepage Services Cards
+   File: services-cards.css
+   Matches design language of services-detail.css
+   ========================================================= */
+
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Poppins:wght@300;400;500;600;700&display=swap');
+
+/* ---------- Shared Variables (mirrors services-detail.css) ---------- */
+:root {
+  --svc-primary:       #1555B8;
+  --svc-primary-dark:  #0e3d8a;
+  --svc-primary-light: #EEF3FF;
+  --svc-accent:        #F4A623;
+  --svc-dark:          #172038;
+  --svc-text:          #555;
+  --svc-text-light:    #888;
+  --svc-border:        #e2e8f5;
+  --svc-bg:            #f7f9fc;
+  --svc-white:         #ffffff;
+  --svc-radius:        8px;
+  --svc-shadow-sm:     0 2px 14px rgba(21,85,184,0.07);
+  --svc-shadow-md:     0 10px 40px rgba(21,85,184,0.14);
+  --svc-transition:    all 0.32s ease;
+  --svc-font-display:  'Playfair Display', serif;
+  --svc-font-body:     'Poppins', sans-serif;
+}
+
+/* =========================================================
+   SECTION WRAPPER
+   ========================================================= */
+.services-section {
+  padding: 80px 0 90px;
+  background: var(--svc-bg);
+  font-family: var(--svc-font-body);
+}
+
+/* =========================================================
+   SECTION INTRO
+   ========================================================= */
+.services-section .section-intro {
+  text-align: center;
+  margin-bottom: 54px;
+}
+
+.services-section .section-intro span {
+  display: inline-block;
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  color: var(--svc-primary);
+  background: var(--svc-primary-light);
+  border: 1px solid rgba(21,85,184,0.18);
+  padding: 5px 16px;
+  border-radius: 30px;
+  margin-bottom: 14px;
+}
+
+.services-section .section-intro h2 {
+  font-family: var(--svc-font-display);
+  font-size: 38px;
+  font-weight: 700;
+  color: var(--svc-dark);
+  margin: 0 0 12px;
+  line-height: 1.2;
+}
+
+.services-section .section-intro p {
+  font-size: 15px;
+  color: var(--svc-text-light);
+  max-width: 540px;
+  margin: 0 auto;
+  line-height: 1.8;
+}
+
+/* =========================================================
+   CARDS GRID
+   ========================================================= */
+.services-cards-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 26px;
+}
+
+/* =========================================================
+   SINGLE CARD
+   ========================================================= */
+.svc-card {
+  background: var(--svc-white);
+  border: 1px solid var(--svc-border);
+  border-radius: var(--svc-radius);
+  padding: 36px 30px 30px;
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  transition: var(--svc-transition);
+}
+
+/* Left accent bar — slides in on hover */
+.svc-card::before {
+  content: "";
+  position: absolute;
+  top: 0; left: 0;
+  width: 4px;
+  height: 100%;
+  background: linear-gradient(180deg, var(--svc-primary) 0%, var(--svc-accent) 100%);
+  transform: scaleY(0);
+  transform-origin: bottom;
+  transition: transform 0.35s ease;
+  border-radius: 0 0 0 var(--svc-radius);
+}
+
+/* Top shimmer line */
+.svc-card::after {
+  content: "";
+  position: absolute;
+  top: 0; left: 0;
+  width: 100%;
+  height: 3px;
+  background: linear-gradient(90deg, var(--svc-primary), var(--svc-accent));
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform 0.4s ease 0.05s;
+}
+
+.svc-card:hover::before { transform: scaleY(1); }
+.svc-card:hover::after  { transform: scaleX(1); }
+
+.svc-card:hover {
+  border-color: rgba(21,85,184,0.35);
+  box-shadow: var(--svc-shadow-md);
+  transform: translateY(-5px);
+}
+
+/* ---------- Large background number ---------- */
+.svc-num {
+  position: absolute;
+  top: 18px;
+  right: 22px;
+  font-family: var(--svc-font-display);
+  font-size: 64px;
+  font-weight: 800;
+  color: rgba(21,85,184,0.06);
+  line-height: 1;
+  pointer-events: none;
+  user-select: none;
+  transition: color 0.3s ease;
+}
+
+.svc-card:hover .svc-num {
+  color: rgba(21,85,184,0.1);
+}
+
+/* ---------- Icon circle ---------- */
+.svc-icon {
+  width: 58px;
+  height: 58px;
+  background: var(--svc-primary-light);
+  border: 1.5px solid rgba(21,85,184,0.15);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 20px;
+  transition: var(--svc-transition);
+}
+
+.svc-icon i {
+  font-size: 22px;
+  color: var(--svc-primary);
+  transition: var(--svc-transition);
+}
+
+.svc-card:hover .svc-icon {
+  background: var(--svc-primary);
+  border-color: var(--svc-primary);
+}
+
+.svc-card:hover .svc-icon i {
+  color: #fff;
+}
+
+/* ---------- Title ---------- */
+.svc-card h3 {
+  font-family: var(--svc-font-body);
+  font-size: 17px;
+  font-weight: 700;
+  color: var(--svc-dark);
+  margin: 0 0 12px;
+  line-height: 1.35;
+  transition: color 0.25s ease;
+}
+
+.svc-card:hover h3 {
+  color: var(--svc-primary);
+}
+
+/* ---------- Description ---------- */
+.svc-card p {
+  font-size: 13.5px;
+  color: var(--svc-text);
+  line-height: 1.85;
+  margin: 0 0 22px;
+  flex-grow: 1;
+}
+
+/* ---------- Divider line above link ---------- */
+.svc-card .svc-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 1.2px;
+  text-transform: uppercase;
+  color: var(--svc-primary);
+  text-decoration: none;
+  padding-top: 16px;
+  border-top: 1px solid var(--svc-border);
+  margin-top: auto;
+  transition: var(--svc-transition);
+}
+
+.svc-card .svc-link i {
+  font-size: 12px;
+  transition: transform 0.25s ease;
+}
+
+.svc-card .svc-link:hover {
+  color: var(--svc-primary-dark);
+  gap: 12px;
+}
+
+.svc-card .svc-link:hover i {
+  transform: translateX(4px);
+}
+
+/* ---------- Accent dot before title (subtle branding) ---------- */
+.svc-card h3::before {
+  content: "—";
+  display: block;
+  font-size: 11px;
+  font-weight: 400;
+  color: var(--svc-accent);
+  letter-spacing: 2px;
+  margin-bottom: 6px;
+}
+
+/* =========================================================
+   RESPONSIVE
+   ========================================================= */
+@media (max-width: 1100px) {
+  .services-cards-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 640px) {
+  .services-section {
+    padding: 55px 0 65px;
+  }
+
+  .services-section .section-intro h2 {
+    font-size: 28px;
+  }
+
+  .services-cards-grid {
+    grid-template-columns: 1fr;
+    gap: 18px;
+  }
+
+  .svc-card {
+    padding: 28px 22px 24px;
+  }
+
+  .svc-num {
+    font-size: 48px;
+  }
+}
